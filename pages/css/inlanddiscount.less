@@ -1,0 +1,43 @@
+.discount{
+  .product_list{
+    li{
+      width:50%;
+      height:13rem;
+      padding:0.5rem;
+      box-sizing:border-box;
+      border-right:1px solid #ccc;
+      border-bottom:1px solid #ccc;
+      float:left;
+      position:relative;
+      a{
+        display:block;
+        height:7.0rem;
+        img{
+          height:100%;
+        }
+      }
+      .info{
+        width:7.75rem;
+        margin:0 auto;
+        font-size:0.6rem;
+        p:nth-child(1){
+          color:#000;
+          font-weight:600;
+          height:2rem;
+        }
+        p:nth-child(2){
+          color:red;
+          margin-top:0.25rem;
+        }
+      }
+        .date{
+          color:#a6948e;
+          position:absolute;
+          bottom:0.5rem;
+        }
+    }
+    li:nth-child(2n){
+      border-right:none;
+    }
+  }
+}

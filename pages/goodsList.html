@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1.0">
+  <title>productlist</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/common-header-foot.css">
+  <link rel="stylesheet" href="css/goodlist.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/rem.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/MLRoute.js"></script>
+  <script src="js/MLTools.js"></script>
+  <script src="js/goodlist.js"></script>
+</head>
+<body>
+  <section class="goodlist">
+    <header>
+      <div class="logo_left center-self-y"></div>
+      <div class="logo_right center-self-y"></div>
+    </header>
+    <section class="search">
+      <div class="search_text  center-self-y">
+        <input type="search" placeholder="请输入你想比价的商品">
+      </div>
+      <div class="search_btn center-self-y">
+        <input type="button" value="搜索">
+      </div>
+    </section>
+    <section class="select">
+      <div class="left fl">
+        <a href="index.html">首页></a>
+        <a href="category.html">全部分类></a>
+        <a href="javascript:;" id="j_type"></a>
+      </div>
+        <button class="center-self-y">筛选</button>
+    </section>
+    <section> 
+      <ul class="list J_page">
+        
+      </ul>
+    </section>
+    <section class="paging J_paging">
+      <div class="btnPrev fl" data-index="prev">上一页</div>
+        <select  class="fl J_select" >
+          
+        </select>
+      <div class="btnNext fr" data-index="next">下一页</div>
+    </section>
+     <footer>
+      <section class="space_four"></section>
+      <section class="user">
+        <ul>
+          <li><a href="javascript:;">登录</a></li>
+          <li><a href="javascript:;">注册</a></li>
+          <li><a href="javascript:;">返回顶部</a></li>
+        </ul>
+      </section>
+      <section class="other_info">
+        <div class="info center-self-y">
+          <span>手机APP下载</span>
+          <span>慢慢买手机版</span>
+          <span>--掌上比价平台</span>
+          <p>
+            <a href="javascript:;">m.manmanbuy.com</a>
+          </p>
+        </div>
+      </section>
+    </footer>
+  </section>
+    <script type="text/template" id="tpl_paging">
+    {{ each result as value i}}
+    <a href="bijia.html?id={{ #value.productId }}&productname={{#value.productName}}">
+      <li class="clearfix"> 
+          <div class="left fl">
+            {{ #value.productImg }}
+          </div>
+          <div class="right">
+            <p class="desc txt_cut_2">{{#value.productName}}</p>
+            <p  class="price">{{#value.productPrice}}</p>
+            <div class="comment">
+              <span>{{#value.productQuote}}</span>
+            <span>评论(2286)</span>
+            </div>     
+          </div>
+        </li>
+    </a>
+   {{ /each }}
+    </script>
+</body>
+</html>

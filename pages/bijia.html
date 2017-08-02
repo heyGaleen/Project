@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>比价</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/common-header-foot.css">
+  <link rel="stylesheet" href="css/bijia.css">
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/rem.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/MLRoute.js"></script>
+  <script src="js/MLTools.js"></script>
+  <script src="js/bijia.js"></script>
+</head>
+<body>
+  <div class="bijia">
+    <header>
+      <div class="logo_left center-self-y"></div>
+      <div class="logo_right center-self-y"></div>
+    </header>
+    <section class="search">
+      <div class="search_text  center-self-y">
+        <input type="search" placeholder="请输入你想比价的商品">
+      </div>
+      <div class="search_btn center-self-y">
+        <input type="button" value="搜索">
+      </div>
+    </section>
+    <section class="select">
+      <div class="left fl">
+        <a href="index.html">首页></a>
+        <a href="goodsList.html" id="j_bname">电视></a>
+        <a href="javascript:;" id="j_ptype"></a>
+      </div>
+        <button class="center-self-y">筛选</button>
+    </section>
+    <section class="ad">
+      
+    </section>
+    <section class="subnav">
+      <ul>
+        <li>比价购买</li>
+        <li>产品参数</li>
+        <li>评价(2322)</li>
+      </ul>
+    </section>
+    <section class="purchase">
+      <h2 class="center-self-y">京东商城</h2>
+      <span class="center-self-y">￥1999.00</span>
+      <div class=" btn center-self-y">去购买</div>
+    </section>
+    <section class="desc">
+      <p>*实际价格以各网站列出的实时售价为准,我们提供的价格可能有数小时至数日的延迟</p>
+    </section>
+    <section class="comment">
+      <div class="top">
+        网友评价
+      </div>
+      <div class="bottom">
+        <ul class="J_comment">
+      
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <section class="space_four"></section>
+      <section class="user">
+        <ul class="fuser">
+          <li><a href="javascript:;">登录</a></li>
+          <li><a href="javascript:;">注册</a></li>
+          <li><a href="javascript:;">返回顶部</a></li>
+        </ul>
+      </section>
+      <section class="other_info">
+        <div class="info">
+          <span>手机APP下载</span>
+          <span>慢慢买手机版</span>
+          <span>--掌上比价平台</span>
+          <p class="mmb">
+            <a href="javascript:;">m.manmanbuy.com</a>
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script type="template" id="tpl_product"> 
+    {{ each result as value i}}
+      <p>
+        {{ #value.productName }}
+      </p>
+      {{ #value.productImg }}
+      <div class="collection">收藏</div>
+    {{ /each }}
+    </script>
+    <script type="text/template" id="tpl_comment">
+    {{ each result as value i}}
+          <li>
+          <div class="top_comt clearfix">
+            <div class="username fl">{{#value.comName}}</div>
+            <div class="right fr">
+              <div class="date">{{#value.comTime}}</div>
+              <div class="buyfrom">{{#value.comFrom}}</div>
+            </div>
+          </div>
+          <p>{{#value.comContent}}</p>
+          </li>
+    {{ /each }}
+    </script>
+  </div>
+</body>
+</html>

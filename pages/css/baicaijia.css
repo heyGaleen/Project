@@ -1,0 +1,116 @@
+.baicaijia header {
+  background-color: #f4483e;
+}
+.baicaijia .bcj_title {
+  height: 2.0rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+.baicaijia .bcj_title li {
+  float: left;
+  width: 2rem;
+  height: 2.0rem;
+  line-height: 2.0rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+.baicaijia .bcj_title li a {
+  color: #000;
+}
+.baicaijia li.active {
+  border-bottom: 1px solid red;
+  box-sizing: border-box;
+}
+.baicaijia li.active a {
+  color: red;
+}
+.baicaijia .bcjlist {
+  width: 100%;
+}
+.baicaijia .bcjlist .space {
+  height: 0.4rem;
+  background-color: #f8f8f8;
+}
+.baicaijia .bcjlist .list {
+  background-color: #fff;
+}
+.baicaijia .bcjlist .list .left {
+  width: 6.75rem;
+  padding: 0.5rem 0.25rem;
+}
+.baicaijia .bcjlist .list .left img {
+  width: 100%;
+}
+.baicaijia .bcjlist .list .right {
+  width: 11.5rem;
+  padding: 0.5rem 0;
+  font-size: 0.7rem;
+  color: #000;
+  font-weight: 600;
+}
+.baicaijia .bcjlist .list .right a {
+  font-wieght: 600;
+}
+.baicaijia .bcjlist .list .right .price {
+  margin: 0.25rem 0;
+  height: 1.0rem;
+  color: red;
+}
+.baicaijia .bcjlist .list .right .price del {
+  margin-left: 0.5rem;
+  color: #ccc;
+}
+.baicaijia .bcjlist .list .right .bar {
+  height: 0.7rem;
+}
+.baicaijia .bcjlist .list .right .bar span {
+  display: inline-block;
+  width: 4.1rem;
+  border: 1px solid red;
+  box-sizing: border-box;
+  background-color: #ffb7b7;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 0;
+}
+.baicaijia .bcjlist .list .right .bar span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 75%;
+  background-color: red;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+.baicaijia .bcjlist .list .right .bar b {
+  color: red;
+  margin-left: 0.5rem;
+}
+.baicaijia .bcjlist .list .right .xiadan {
+  margin-top: 0.7rem;
+  margin-right: 0.5rem;
+}
+.baicaijia .bcjlist .list .right .xiadan a {
+  text-align: center;
+}
+.baicaijia .bcjlist .list .right .xiadan a:first-child {
+  float: left;
+  width: 6rem;
+  line-height: 1.25rem;
+  height: 1.25rem;
+  border: 1px dashed red;
+  color: red;
+  font-size: 0.6rem;
+}
+.baicaijia .bcjlist .list .right .xiadan a:last-child {
+  float: right;
+  width: 3.9rem;
+  height: 1.4rem;
+  color: #fff;
+  background-color: red;
+  border-radius: 0.25rem;
+  line-height: 1.4rem;
+}

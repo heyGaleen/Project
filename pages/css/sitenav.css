@@ -1,0 +1,24 @@
+.sitenav .sitenavlist ul {
+  padding: 0.5rem 2.15rem 1.0rem 0.5rem;
+}
+.sitenav .sitenavlist ul li.siteinfo {
+  float: left;
+  height: 2.15rem;
+  border: 1px solid #ccc;
+  margin: 0.5rem;
+}
+.sitenav .sitenavlist ul li.siteinfo a {
+  display: block;
+  height: 2.15rem;
+  line-height: 2.15rem;
+  text-align: center;
+  color: #000;
+  font-size: 0.75rem;
+  position: relative;
+  background-color: #f4f4f4;
+  text-indent: 1.8rem;
+}
+.sitenav .sitenavlist ul li.siteinfo a img {
+  width: 0.9rem;
+  padding: 0 0.4rem;
+}

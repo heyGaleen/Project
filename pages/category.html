@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>比价</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/common-header-foot.css">
+  <link rel="stylesheet" href="css/category.css">
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/rem.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/MLRoute.js"></script>
+  <script src="js/MLTools.js"></script>
+  <script src="js/category.js"></script>
+</head>
+<body>
+  <section class="category">
+    <header>
+      <div class="logo_left center-self-y"></div>
+      <div class="logo_right center-self-y"></div>
+    </header>
+    <section class="search">
+      <div class="search_text  center-self-y">
+        <input type="search" placeholder="请输入你想比价的商品">
+      </div>
+      <div class="search_btn center-self-y">
+        <input type="button" value="搜索">
+      </div>
+    </section>
+    <!-- 商品分类区 -->
+    <section class="category_list J_list">
+        
+    </section>
+    <footer>
+      <section class="space_four"></section>
+      <section class="user">
+        <ul>
+          <li><a href="javascript:;">登录</a></li>
+          <li><a href="javascript:;">注册</a></li>
+          <li><a href="javascript:;">返回顶部</a></li>
+        </ul>
+      </section>
+      <section class="other_info">
+        <div class="info">
+          <span>手机APP下载</span>
+          <span>慢慢买手机版</span>
+          <span>--掌上比价平台</span>
+          <p>
+            <a href="javascript:;">m.manmanbuy.com</a>
+          </p>
+        </div>
+      </section>
+    </footer>
+    </section>
+    <script type="text/template" id="tpl_category_title">
+    {{ each result as value i }}
+      <div class="title" data-id="{{ #value.titleId }}">
+          <div class="left fl"> {{ #value.title}}</div>
+          <div class="right center-self-y J_triangle"></div>
+        </div>        
+          <ul class="content J_content clearfix">
+          
+          </ul>
+    {{ /each }}
+    </script>
+    <script type="text/template" id="tpl_category">
+      {{ each result as value i}}
+            <li class="item">
+              <a href="goodsList.html?id={{#value.categoryId}}&categorytitle={{#value.category}}">{{ #value.category }}</a>
+            </li>
+          {{ /each }}
+    </script>
+</body>
+</html>

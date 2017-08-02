@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>moneyctrl</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/moneyctrl.css">
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/rem.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/MLRoute.js"></script>
+  <script src="js/MLTools.js"></script>
+  <script src="js/getmoneyctrl.js"></script>
+</head>
+<body>
+  <div class="moneyctrl">
+    <header>
+      <h2 class="center-self-x">省钱空-最新优惠</h2>
+      <div class="logo_right center-self-y"></div>
+    </header>
+    <section>
+      <ul class="ctrl_list J_ctrl">
+         
+      </ul>
+    </section>
+     <section class="paging J_paging">
+      <div class="btnPrev fl" data-index="prev">上一页</div>
+        <select  class="fl J_select" >
+          
+        </select>
+      <div class="btnNext fr" data-index="next">下一页</div>
+    </section> 
+    <footer>
+      <section class="space_four"></section>
+      <section class="user">
+        <ul>
+          <li><a href="javascript:;">登录</a></li>
+          <li><a href="javascript:;">注册</a></li>
+          <li><a href="javascript:;">返回顶部</a></li>
+        </ul>
+      </section>
+      <section class="other_info">
+        <div class="info center-self-y">
+          <span>手机APP下载</span>
+          <span>慢慢买手机版</span>
+          <span>--掌上比价平台</span>
+          <p>
+            <a href="javascript:;">m.manmanbuy.com</a>
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script type="text/template" id="tpl_ctrl">
+    {{ each result as value i }}
+     <li>
+          <a href="moneyctrlproduct.html?id={{#value.productId}}" class="fl imgList">
+           {{#value.productImg2}}
+          </a>
+          <div class="info fr">
+            <div class="top">
+              <a href="moneyctrlproduct.html?id={{#value.productId}}">{{#value.productName}}</a>
+              <span>{{#value.productPinkage}}</span>
+            </div>
+            <div class="bottom">
+              <span>{{#value.productFrom}}|</span>
+              <span class="date">{{#value.productTime}}</span>
+              <span class="page">{{#i+1}}</span>
+            </div>
+          </div>
+        </li>
+  {{ /each }}
+    </script>    
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>品牌列表</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/common-header-foot.css">
+  <link rel="stylesheet" href="css/brand.css">
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/rem.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/MLRoute.js"></script>
+  <script src="js/MLTools.js"></script>
+  <script src="js/getbrand.js"></script>
+</head>
+<body>
+  <section class="brand">
+    <header>
+      <div class="logo_left center-self-y"></div>
+      <div class="logo_right center-self-y"></div>
+    </header>
+    <section class="search">
+      <div class="search_text  center-self-y">
+        <input type="search" placeholder="请输入你想比价的商品">
+      </div>
+      <div class="search_btn center-self-y">
+        <input type="button" value="搜索">
+      </div>
+    </section>  
+    <section class="select">
+      <div class="left fl">
+        <a href="index.html">首页></a>
+        <a href="#">全部分类></a>
+      </div>
+    </section>
+    <section class="brandname">
+      <div class="brand_head" id="j_bhead"></div>
+      <ul class="brandtitlelist j_btlist">
+        
+      </ul>
+    </section>
+    <section class="brandlist">
+      <div class="brand_head" id="j_lhead"></div>
+      <ul class="paihang j_senior">
+        
+      </ul>
+    </section>
+    <section class="brandcomment">
+      <div class="brand_head" id="j_chead"></div>
+      <ul class="comment j_com">
+        <li>
+          <div class="top clearfix">
+            <div class="left fl">
+              <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt="">
+            </div>
+            <div class="right fr">
+              <p class="desc">乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视<a href="bijia.html?id={{ #value.productId}}"></a></p>
+            </div>
+          </div>
+          <div class="bot">
+          <div class="userinfo clearfix">
+            <span class="username fl"></span>
+            <span class="time fr"></span>
+          </div>  
+            <p class="content"></p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <section class="space_four"></section>
+      <section class="user">
+        <ul>
+          <li><a href="javascript:;">登录</a></li>
+          <li><a href="javascript:;">注册</a></li>
+          <li><a href="javascript:;">返回顶部</a></li>
+        </ul>
+      </section>
+      <section class="other_info">
+        <div class="info">
+          <span>手机APP下载</span>
+          <span>慢慢买手机版</span>
+          <span>--掌上比价平台</span>
+          <p>
+            <a href="javascript:;">m.manmanbuy.com</a>
+          </p>
+        </div>
+      </section>
+    </footer>
+  </section>
+  
+  <script type="text/template" id="tpl_brandname">
+  {{each result as value i}}
+    <li data-brandtitleid="{{#value.brandtitleId}}">
+          <div class="num fl">{{i+1}}</div>
+          <div class="branddetail fl">
+            <p class="name">{{value.brandName}}</p>
+            <p class="sale">{{value.brandInfo}}</p>
+          </div>
+    </li>
+  {{/each}}
+  </script>
+  <script type="text/template" id="tpl_brandlist">
+    {{ each result as value i}}
+    <a href="javascript:;">
+      <li class="clearfix" data-productid="{{ #value.productId }}"> 
+          <div class="left fl">
+            {{ #value.productImg }}
+          </div>
+          <div class="right fr">
+            <p class="desc"><a href="javascript:;">{{#value.productName}}</a></p>
+            <p class="price"><a href="javascript:;">{{#value.productPrice}}</a></p>
+            <a href="javascript:;">{{#value.productQuote}}</a>
+            <a href="javascript:;">{{value.productCom}}</a>
+          </div>
+        </li>
+    </a>
+   {{ /each }}
+    </script>
+    <script type="text/template" id="tpl_comment">
+    {{ each result as value i}}
+      <li>
+          <div class="top clearfix">
+            <div class="left fl">
+              <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt="">
+            </div>
+            <div class="right fr">
+              <p class="desc">乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视<a href="brand.html?productid={{ #value.productId}}"></a></p>
+            </div>
+          </div>
+          <div class="bot">
+          <div class="userinfo clearfix">
+            <span class="username fl">{{value.comName}}</span>
+            <span class="time fr">{{value.comTime}}</span>
+          </div>  
+            <p class="content">{{value.comContent}}</p>
+          </div>
+        </li>
+    {{ /each }}
+    </script>
+</body>
+</html>

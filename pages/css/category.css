@@ -1,0 +1,38 @@
+.category .category_list .title {
+  width: 100%;
+  height: 1.95rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #ededed;
+  font-size: 1.0rem;
+  position: relative;
+}
+.category .category_list .title .left {
+  width: 5rem;
+  color: #000;
+  text-indent: 0.5rem;
+  height: 1.95rem;
+  line-height: 1.95rem;
+}
+.category .category_list .title .right {
+  width: 0;
+  height: 0;
+  border-top: 0.7rem solid #ccc;
+  border-left: 0.7rem solid transparent;
+  border-right: 0.7rem solid transparent;
+  right: 0.5rem;
+}
+.category .category_list .content {
+  display: none;
+}
+.category .category_list .content li.item {
+  float: left;
+  width: 33.33%;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 0.7rem;
+  height: 1.95rem;
+  line-height: 1.95rem;
+  text-align: center;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/rem.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/MLRoute.js"></script>
+  <script src="js/MLTools.js"></script>
+</head>
+<body>
+  <div class="face">
+    <header>
+      <div class="logo_left center-self-y"></div>
+      <div class="logo_right center-self-y"></div>
+    </header>
+    <section class="search">
+      <div class="search_text  center-self-y">
+        <input type="search" placeholder="请输入你想比价的商品">
+
+      </div>
+      <div class="search_btn center-self-y">
+        <input type="button" value="搜索">
+      </div>
+    </section>
+    <section class="space_one"></section>
+    <nav>
+      <ul class="clearfix J_menu">
+        
+      </ul>
+    </nav>
+    <div class="space_two"></div>
+    <div class="discount">
+      <p class="fl">超值折扣推荐</p>
+      <div class="log_right fr center-self-y"></div>
+    </div>
+    <div class="product">
+      <ul class="J_product"></ul>
+    </div>
+    <section class="more">
+      <div class="favour">
+        <a href="javascript:;">更多优惠信息>></a>
+      </div>
+    </section>
+    <section class="space_three"></section>
+    <footer>
+      <section class="band">
+      <p class="fl">品牌排行</p>
+      <div class="log_right fr center-self-y"></div>
+      </section>
+      <section class="space_four"></section>
+      <section class="user">
+        <ul>
+          <li><a href="javascript:;">登录</a></li>
+          <li><a href="javascript:;">注册</a></li>
+          <li><a href="#">返回顶部</a></li>
+        </ul>
+      </section>
+      <section class="other_info">
+        <div class="info center-self-y">
+          <span>手机APP下载</span>
+          <span>慢慢买手机版</span>
+          <span>--掌上比价平台</span>
+          <p>
+            <a href="javascript:;">m.manmanbuy.com</a>
+          </p>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <script type="text/html" id="tpl_menu">
+  {{ each result as value i }}
+    <li>
+        <a href="{{ #value.titlehref}}">
+          {{ #value.img }}
+        </a>
+          <p>{{ #value.name }}</p>
+    </li>
+  {{ /each }}
+  </script>
+  <script type="text/html" id="tpl_ctrl">
+  {{ each result as value i }}
+     <li>
+          <a href="javascript:;" class="fl imgList">
+           {{ #value.productImgLg }}
+          </a>
+          <div class="info fr">
+            <div class="top">
+              <p><a href="javascript:;">{{ #value.productName }}</a></p>
+              <span>{{ #value.productPinkage }}</span>
+            </div>
+            <div class="bottom">
+              <span>{{ #value.productFrom }}|</span>
+              <span class="date">{{ #value.productTime }}</span>
+              <span class="page">{{#i+1}}</span>
+            </div>
+          </div>
+        </li>
+  {{ /each }}
+  </script>
+  <script src="js/face.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+.gsproduct .gs_info {
+  height: 1.75rem;
+}
+.gsproduct .gs_info select {
+  width: 25%;
+  height: 100%;
+}
+.gsproduct .gs_info .search {
+  width: 20%;
+  height: 100%;
+  border-left: 1px solid #ccc;
+}
+.gsproduct .gssproduct {
+  background-color: #f1f1f1;
+}
+.gsproduct .gssproduct li {
+  width: 8.9rem;
+  height: 11.0rem;
+  background-color: #fff;
+  margin-top: 0.5rem;
+  position: relative;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.gsproduct .gssproduct li .imgwrap {
+  height: 6.5rem;
+}
+.gsproduct .gssproduct li .imgwrap img {
+  height: 100%;
+}
+.gsproduct .gssproduct li p {
+  text-indent: 0.5rem;
+  height: 1.0rem;
+  overflow: hidden;
+}
+.gsproduct .gssproduct li .bot {
+  position: absolute;
+  bottom: 0.5rem;
+}
+.gsproduct .gssproduct li .price {
+  width: 2.5rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  color: red;
+  margin-left: 0.5rem;
+}
+.gsproduct .gssproduct li .btn {
+  width: 3.15rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  background-color: #ff9501;
+  border-radius: 0.125rem;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+.gsproduct .gssproduct li:nth-child(2n) {
+  float: left;
+  margin-left: 0.35rem;
+}
+.gsproduct .gssproduct li:nth-child(2n+1) {
+  float: right;
+  margin-right: 0.35rem;
+}

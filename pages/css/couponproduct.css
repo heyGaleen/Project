@@ -1,0 +1,78 @@
+.couponproduct header {
+  background-color: red;
+}
+.couponproduct .prompt {
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.couponproduct .coupon_list li {
+  height: 5.0rem;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #e3e3e3;
+  background-color: #fff;
+}
+.couponproduct .coupon_list li .left {
+  width: 5.0rem;
+}
+.couponproduct .coupon_list li .left img {
+  width: 100%;
+}
+.couponproduct .coupon_list li .right {
+  margin-left: 5.5rem;
+}
+.couponproduct .coupon_list li .right p {
+  font-size: 0.7rem;
+}
+.couponproduct .coupon_list li .right .desc {
+  line-height: 1.0rem;
+  height: 2rem;
+}
+.couponproduct .coupon_list li .right .price {
+  font-weight: 700;
+  text-align: left;
+  height: 1.0rem;
+  line-height: 1.0rem;
+}
+.couponproduct .coupon_list li .right .date {
+  color: #f1861a;
+  text-align: left;
+  margin-top: 0.75rem;
+}
+.couponproduct .modal-overlay {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.couponproduct .modal-overlay .modal-data {
+  width: 10.0rem;
+  height: 8.0rem;
+  background-color: #fff;
+}
+.couponproduct .modal-overlay .modal-data .imgWrap {
+  height: 100%;
+}
+.couponproduct .modal-overlay .modal-data .imgWrap img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.couponproduct .modal-overlay .modal-data .arrow {
+  width: 100%;
+  height: 1.5rem;
+}
+.couponproduct .modal-overlay .modal-data .arrow span {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.0rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+}

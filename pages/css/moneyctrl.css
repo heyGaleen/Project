@@ -1,0 +1,139 @@
+.moneyctrl header {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #ff841d;
+  line-height: 100px;
+  color: #fff;
+  position: relative;
+}
+.moneyctrl header h2 {
+  height: 2.5rem;
+  font-size: 1.0rem;
+  width: 9.5rem;
+  line-height: 2.5rem;
+}
+.moneyctrl header .logo_right {
+  width: 2.0rem;
+  height: 1.95rem;
+  background: url(../images/header_app.png) no-repeat;
+  background-size: 100%;
+  right: 0.4rem;
+}
+.moneyctrl ul {
+  background-color: #fff;
+}
+.moneyctrl ul li {
+  height: 6.5rem;
+  border-bottom: 1px solid #e7e7e7;
+}
+.moneyctrl ul li a.imgList {
+  display: block;
+  width: 5.9rem;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.moneyctrl ul li a.imgList img {
+  width: 100%;
+}
+.moneyctrl ul li .info {
+  width: 12.0rem;
+  height: 4.0rem;
+  padding: 0.75rem 0.125rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+.moneyctrl ul li .info .top {
+  width: 100%;
+  height: 1.75rem;
+  font-size: 0.6rem;
+}
+.moneyctrl ul li .info .top a {
+  color: #000;
+}
+.moneyctrl ul li .info .top span {
+  color: #ff841d;
+}
+.moneyctrl ul li .info .bottom {
+  height: 0.75rem;
+  line-height: 0.75rem;
+  margin-top: 1.5rem;
+  font-size: 0.5rem;
+}
+.moneyctrl ul li .info .bottom span {
+  float: left;
+  height: 100%;
+}
+.moneyctrl ul li .info .bottom span.page {
+  float: right;
+  margin-right: 0.5rem;
+}
+.moneyctrl .paging {
+  width: 100%;
+  height: 2.3rem;
+  box-sizing: border-box;
+  padding: 0.5rem 1.05rem 0 1.05rem;
+}
+.moneyctrl .paging .btnPrev,
+.moneyctrl .paging .btnNext {
+  width: 4.15rem;
+  height: 1.7rem;
+  background-color: #eaeaea;
+  border-radius: 0.25rem;
+  text-align: center;
+  line-height: 1.7rem;
+}
+.moneyctrl .paging select {
+  width: 3.75rem;
+  height: 1.7rem;
+  margin: 0 2.25rem;
+}
+.moneyctrl footer {
+  background-color: #efefef;
+}
+.moneyctrl footer .space_four {
+  width: 100%;
+  height: 1.25rem;
+}
+.moneyctrl footer .user ul {
+  width: 100%;
+  height: 1.7rem;
+}
+.moneyctrl footer .user ul li {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  border-right: 2px solid #c5c5c5;
+  border-top: 2px solid #c5c5c5;
+  border-bottom: 2px solid #c5c5c5;
+  text-align: center;
+}
+.moneyctrl footer .user ul li a {
+  color: #000;
+  font-weight: 700;
+}
+.moneyctrl footer .user ul li:last-child {
+  border-right: none;
+}
+.moneyctrl footer .other_info {
+  width: 100%;
+  height: 3.1rem;
+  position: relative;
+}
+.moneyctrl footer .other_info .info {
+  width: 100%;
+  height: 1.3rem;
+  text-align: center;
+}
+.moneyctrl footer .other_info .info span {
+  color: #665e61;
+}
+.moneyctrl footer .other_info .info span:first-child {
+  color: red;
+}
+.moneyctrl footer .other_info .info span:nth-child(2) {
+  color: #000;
+}

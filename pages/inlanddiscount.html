@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>inlanddiscount</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/common-header-foot.css">
+  <link rel="stylesheet" href="css/inlanddiscount.css">
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/rem.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/MLRoute.js"></script>
+  <script src="js/MLTools.js"></script>
+  <script src="js/discount.js"></script>
+</head>
+<body>
+  <div class="discount">
+    <header>
+      <h2 class="center-self-x">国内折扣</h2>
+      <div class="logo_right center-self-y"></div>
+    </header>
+    <!-- 商品详细列表 -->
+    <section>
+      <ul class="product_list j_discount clearfix">
+
+      </ul>
+    </section>
+    <footer>
+      <section class="space_four"></section>
+      <section class="user">
+        <ul class="fuser">
+          <li><a href="javascript:;">登录</a></li>
+          <li><a href="javascript:;">注册</a></li>
+          <li><a href="javascript:;">返回顶部</a></li>
+        </ul>
+      </section>
+      <section class="other_info">
+        <div class="info">
+          <span>手机APP下载</span>
+          <span>慢慢买手机版</span>
+          <span>--掌上比价平台</span>
+          <p class="mmb">
+            <a href="javascript:;">m.manmanbuy.com</a>
+          </p>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <script type="text/template" id="tpl_discount">
+  {{ each result as value i }}
+      <li>
+        <a href="discountproduct.html?productid={{#value.productid}}">
+          {{#value.productImg}}
+        </a>
+        <div class="info">
+          <p class="txt_cut_2">{{#value.productName}}</p>
+          <p>{{#value.productPrice}}</p>
+        </div>
+        <div class="date">
+            <span>{{#value.productFrom}}</span>
+            <span>|</span>
+            <span>{{#value.productTime}}</span>
+        </div>
+      </li>
+  {{ /each }}
+  </script>
+</body>
+</html>

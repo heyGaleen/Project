@@ -1,0 +1,82 @@
+.couponproduct{
+  header{
+    background-color: red;
+  }
+  .prompt{
+    width: 100%;
+    height:1.5rem;
+    line-height:1.5rem;
+    text-align:center;
+  }
+  .coupon_list{
+    li{
+      height:5.0rem;
+      padding:0.75rem 0.5rem;
+      border-bottom:1px solid #e3e3e3;
+      background-color: #fff;
+      .left{
+      width:5.0rem;
+        img{
+          width: 100%;
+        }
+      }
+      .right{
+        margin-left:5.5rem;
+        p{
+          font-size:0.7rem;
+        }
+        .desc{
+          line-height:1.0rem;
+          height:2rem;
+        }
+        .price{
+          font-weight:700;
+          text-align:left;
+          height:1.0rem;
+          line-height:1.0rem;
+        }
+        .date{
+          color:#f1861a;
+          text-align:left;
+          margin-top:0.75rem;
+        }
+      }
+    }
+  }
+  .modal-overlay{
+    visibility:hidden;
+    position:fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    z-index:1000;
+    background-color: rgba(0,0,0,.5);
+    .modal-data{
+      width:10.0rem;
+      height:8.0rem;
+      background-color: #fff;
+      .imgWrap{
+        height:100%;
+        img{
+          position:absolute;
+          left:50%;
+          top:50%;
+          transform:translate(-50%,-50%);
+          }   
+      }
+      .arrow{
+        width: 100%;
+        height:1.5rem;
+        span{
+          width: 1.5rem;
+          height:1.5rem;
+          font-size:1.0rem;
+          background-color: rgba(0,0,0,.2);
+          color:#fff;
+          text-align:center;
+        }
+      }
+    }
+  }
+}

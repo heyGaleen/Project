@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>白菜价</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/common-header-foot.css">
+  <link rel="stylesheet" href="css/baicaijia.css">
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/rem.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/MLRoute.js"></script>
+  <script src="js/MLTools.js"></script>
+  <script src="js/baicaijia.js"></script>
+<!--   <script src="js/slide.js"></script>
+ --></head>
+<body>
+  <div class="baicaijia">
+    <header>
+      <h2 class="center-self-x">白菜价</h2>
+      <div class="logo_right center-self-y"></div>
+    </header>
+    <!-- 商品详细列表 -->
+    <section id="scroll-wrap">
+      <ul id="j_title" class="bcj_title  clearfix">
+        
+      </ul>
+      <ul id="j_bcjList" class="bcjlist">
+        
+      </ul>
+    </section>
+    <footer>
+      <section class="space_four"></section>
+      <section class="user">
+        <ul>
+          <li><a href="javascript:;">登录</a></li>
+          <li><a href="javascript:;">注册</a></li>
+          <li><a href="javascript:;">返回顶部</a></li>
+        </ul>
+      </section>
+      <section class="other_info">
+        <div class="info">
+          <span>手机APP下载</span>
+          <span>慢慢买手机版</span>
+          <span>--掌上比价平台</span>
+          <p>
+            <a href="javascript:;">m.manmanbuy.com</a>
+          </p>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <script type="text/template" id="tpl_bcjtitle">
+  {{each result as value i}}
+    <li class="{{if i==0}}active{{/if}}" data-index="{{#value.titleId}}">
+      <a href="javascript:;">{{#value.title}}</a>
+    </li>
+  {{/each}}
+  </script>
+  <script type="text/template" id="tpl_bcjlist">
+    {{each result as value i}}
+      <li>
+          <div class="space"></div>
+          <div class="clearfix list">
+            <div class="left fl">
+            {{#value.productImg}}
+            </div>
+            <div class="right fr">
+              {{#value.productName}}
+              <div class="price">
+                {{#value.productPrice}}
+              </div>
+              {{#value.productCouponRemain}}
+              <div class="xiadan">
+                {{#value.productCoupon}}
+                {{#value.productHref}}
+              </div>
+            </div>
+          </div>
+      </li>
+    {{/each}}
+  </script>
+</body>
+</html>

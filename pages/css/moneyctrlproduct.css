@@ -1,0 +1,194 @@
+.moneyctrlproduct header {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #ff841d;
+  line-height: 100px;
+  color: #fff;
+  position: relative;
+}
+.moneyctrlproduct header h2 {
+  height: 2.5rem;
+  font-size: 1.0rem;
+  width: 9.5rem;
+  line-height: 2.5rem;
+}
+.moneyctrlproduct header .logo_right {
+  width: 2.0rem;
+  height: 1.95rem;
+  background: url(../images/header_app.png) no-repeat;
+  background-size: 100%;
+  right: 0.4rem;
+}
+.moneyctrlproduct p.product_title {
+  width: 100%;
+  height: 2.75rem;
+  font-size: 1.0rem;
+  color: #000;
+  line-height: 2.75rem;
+  text-indent: 0.5rem;
+}
+.moneyctrlproduct .detail {
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  color: #ccc;
+  text-indent: 0.75rem;
+}
+.moneyctrlproduct .content {
+  height: 11.0rem;
+}
+.moneyctrlproduct .content p.text {
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+}
+.moneyctrlproduct .content .product_pic {
+  width: 6.75rem;
+  padding: 0 0.5rem;
+}
+.moneyctrlproduct .content .product_pic img {
+  width: 100%;
+}
+.moneyctrlproduct .product_img {
+  width: 100%;
+  padding: 0 5.0rem;
+}
+.moneyctrlproduct .city_list ul {
+  width: 6.9rem;
+  padding: 0 0.6rem;
+  box-shadow: 0 0 1px #ccc;
+  margin: 0 auto;
+}
+.moneyctrlproduct .city_list ul li {
+  width: 100%;
+  border-bottom: 1px dashed #ccc;
+  height: 1.0rem;
+  line-height: 1.0rem;
+}
+.moneyctrlproduct .city_list ul li span {
+  font-size: 0.7rem;
+  color: #000;
+  font-weight: 600;
+}
+.moneyctrlproduct .city_list ul li strong {
+  color: #f37403;
+  float: right;
+}
+.moneyctrlproduct .btn {
+  width: 16.75rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #ff9000;
+  margin: 1rem auto;
+  line-height: 1.5rem;
+  color: #fff;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.moneyctrlproduct .moreinfo img {
+  width: 80%;
+  margin: 0 auto;
+}
+.moneyctrlproduct .comment .tit {
+  height: 1.0rem;
+  font-size: 0.9rem;
+  text-indent: 0.5rem;
+  margin: 0.5rem 0;
+}
+.moneyctrlproduct .comment textarea {
+  width: 17.5rem;
+  height: 5.0rem;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.moneyctrlproduct .comment textarea .bot {
+  width: 100%;
+  height: 2rem;
+  background-color: #ccc;
+  position: absolute;
+  bottom: 0;
+}
+.moneyctrlproduct .comment textarea .bot .left {
+  width: 80%;
+  height: 100%;
+}
+.moneyctrlproduct .comment textarea .bot .right {
+  width: 20%;
+  height: 100%;
+  background-color: red;
+}
+.moneyctrlproduct .list li {
+  padding: 0.5rem 0.5rem;
+}
+.moneyctrlproduct .list li img {
+  width: 4.0rem;
+  border-radius: 50%;
+}
+.moneyctrlproduct .list li .content {
+  height: auto;
+}
+.moneyctrlproduct .list li .name {
+  height: 2.0rem;
+  line-height: 2.0rem;
+}
+.moneyctrlproduct .list li .name .username {
+  height: 100%;
+  float: left;
+  color: blue;
+  font-size: 0.7rem;
+}
+.moneyctrlproduct .list li .name .time {
+  height: 100%;
+  float: right;
+}
+.moneyctrlproduct .list li .content {
+  font-size: 0.8rem;
+}
+.moneyctrlproduct footer {
+  background-color: #efefef;
+}
+.moneyctrlproduct footer .space_four {
+  width: 100%;
+  height: 1.25rem;
+}
+.moneyctrlproduct footer .user ul {
+  width: 100%;
+  height: 1.7rem;
+}
+.moneyctrlproduct footer .user ul li {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  border-right: 2px solid #c5c5c5;
+  border-top: 2px solid #c5c5c5;
+  border-bottom: 2px solid #c5c5c5;
+  text-align: center;
+}
+.moneyctrlproduct footer .user ul li a {
+  color: #000;
+  font-weight: 700;
+}
+.moneyctrlproduct footer .user ul li:last-child {
+  border-right: none;
+}
+.moneyctrlproduct footer .other_info {
+  width: 100%;
+  height: 3.1rem;
+  position: relative;
+}
+.moneyctrlproduct footer .other_info .info {
+  width: 100%;
+  height: 1.3rem;
+  text-align: center;
+}
+.moneyctrlproduct footer .other_info .info span {
+  color: #665e61;
+}
+.moneyctrlproduct footer .other_info .info span:first-child {
+  color: red;
+}
+.moneyctrlproduct footer .other_info .info span:nth-child(2) {
+  color: #000;
+}
